@@ -154,6 +154,7 @@ int main(void)
 		glfwPollEvents();
 		mouse::update(dt);
 		glfwGetWindowSize(window, &WINDOW_WIDTH, &WINDOW_HEIGHT);
+		glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
 
 		/* Swap front and back buffers */
 		glfwSwapBuffers(window);
