@@ -1,3 +1,5 @@
 #Ignore exe fies
 *.exe
 .DS_store
+fluid.exe
+fun.exe
