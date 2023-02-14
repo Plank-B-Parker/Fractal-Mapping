@@ -1,0 +1,3 @@
+#Ignore exe fies
+*.exe
+.DS_store
