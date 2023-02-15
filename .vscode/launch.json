@@ -1,26 +1,26 @@
 {
     "version": "0.2.0",
     "configurations": [
-        // {
-        //     "name": "(Windows) Launch",
-        //     "type": "cppvsdbg",
-        //     "request": "launch",
-        //     "program": "${workspaceFolder}/Balls C++/fun.exe",
-        //     "args": [],
-        //     "stopAtEntry": false,
-        //     "cwd": "${workspaceFolder}/Balls C++",
-        //     "environment": [],
-        //     "console": "externalTerminal"
-        // },
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/fun.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "externalTerminal"
+        },
         {
             "name": "C/C++ Runner: Debug Session",
-            "type": "lldb",
+            "type": "cppdbg",
             "request": "launch",
             "args": [],
             "stopAtEntry": false,
             "externalConsole": true,
-            "cwd": "${workspaceFolder}/Balls C++",
-            "program": "${workspaceFolder}/Balls C++/fun.exe",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/fun.exe",
             "windows": {
                 "MIMode": "gdb",
                 "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe"
@@ -38,30 +38,5 @@
                 }
             ]
         },
-        {
-            "name": "(gdb) Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/path/to/gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ]
-        }
     ]
 }
