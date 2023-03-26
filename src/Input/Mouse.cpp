@@ -17,7 +17,7 @@ void mouse::mouse_callback(GLFWwindow* window, double xpos, double ypos){
     float diffX = xpos - centreX;
     float diffY = ypos - centreY;
 
-    pos = complex(diffX / (float)centreY, -diffY / (float)centreY);
+    pos = complex(diffX/centreY, -diffY/centreY);
 
     scroll = 0;
 
